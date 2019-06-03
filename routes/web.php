@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('user/{name}', 'Api\V1\UserController@index')->where('name', '[A-Za-z]+');
+
+
+//引入_后台路由
+include_once __DIR__.'/admin/web.php';

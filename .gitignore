@@ -1,7 +1,9 @@
 
 /public
 /storage
+/vendor
 .gitignore
 .env
+
 
 
